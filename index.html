@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Win Services</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="banner-container" id="banner">
+            <a class="contact-us-btn" href="#contacts">SEND US MESSAGE</a>
+            <div class="tagline-container">
+                <div class="tagline">
+                    <h1 id="tagline">Looking for affordable services online?</h1>
+                </div>
+                <a class="btn services-btn" href="#services">OFFER SERVICES</a>
+            </div>
+        </div>
+
+        <div class="services-container" id="services">
+            <h2>Services</h2>
+            <ul class="services-list">
+                <li class="service-item">
+                    <div class="container-service-no">
+                        <span class="service-no">1</span>
+                    </div>
+                    <img src="images/icons/encoding.png" alt="encoding" class="service-img">
+                    <p class="service-desc">
+                        Encode or copy your works in MSWord, MSExcel, Powerpoint etc.
+                    </p>
+                </li>
+                <li class="service-item">
+                    <div class="container-service-no">
+                        <span class="service-no">2</span>
+                    </div>
+                    <img src="images/icons/editing.png" alt="editing" class="service-img">
+                    <p class="service-desc">
+                        Edit your pictures or documents to make it more presentable.
+                    </p>
+                </li>
+                <li class="service-item">
+                    <div class="container-service-no">
+                        <span class="service-no">3</span>
+                    </div>
+                    <img src="images/icons/assisting.png" alt="assisting" class="service-img">
+                    <p class="service-desc">
+                        Assist you in your homeworks and programming subjects.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contacts-container" id="contacts">
+            <h2>Have a conversation?</h2>
+            <div class="send-email-container">
+                <p class="send-us-label">Send us a message</p>
+                <form name="contact" method="POST" data-netlify="true">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Fullname" name="name">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="input-wrapper">
+                        <textarea rows="5" cols="10" name="message" placeholder="Write your message"></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+            <ul class="contacts-list">
+                <li class="contact-item">
+                    <img src="images/icons/number.png" alt="phone number" class="contact-icon">
+                    <p class="contact-detail">0928-385-1610</p>
+                </li>
+                <li class="contact-item">
+                    <img src="images/icons/email.png" alt="email address" class="contact-icon">
+                    <p class="contact-detail">sherwincarlosph@gmail.com</p>
+                </li>
+                <li class="contact-item">
+                    <img src="images/icons/facebook.png" alt="facebook account" class="contact-icon">
+                    <a class="contact-detail" href="https://www.facebook.com/Win.Karlos">www.facebook.com/Win.Karlos</p>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#banner" class="go-top"><img class="arrow-up" src="images/icons/arrow-up.png" alt="arrow up"></a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

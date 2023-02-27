@@ -1,0 +1,276 @@
+:root {
+
+    /* color */
+    --red: #eb551f;
+    --white: #DDEEDD;
+    --dark-brown: #1B130E;
+    --yellow:#ffff00;
+
+    /* font */
+    --main-font: 'Montserrat', sans-serif;
+
+}
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.main-container {
+    position: relative;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    background: url(../images/banner1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+
+}
+
+.contact-us-btn {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background: blue;
+    font-weight: 700;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.tagline-container {
+    margin-left: 50px;
+    width: 100%;
+    animation: fadeIn 3s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.tagline {
+    font-size: 16px;
+    color: var(--white);
+    padding: 10px;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+
+.services-btn {
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--red);
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    letter-spacing: 5px;
+    line-height: 40px;
+    animation: blink 1s infinite;
+    opacity: 1;
+}
+
+@keyframes blink {
+    from{
+        opacity: 0.5;
+    }to{
+        opacity: 1;
+    }
+
+}
+
+
+/* SERVICES */
+
+.services-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white);
+
+}
+
+h2 {
+    color: var(--red);
+    padding: 15px;
+    letter-spacing: 5px;
+    margin: 0 0 0 20px;
+}
+
+.services-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+}
+
+
+.service-item {
+    width: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--red);
+    margin: 40px 0;
+    position: relative;
+
+}
+
+.container-service-no {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border: 2px solid var(--yellow);
+    padding: 20px;
+    border-radius: 50%;
+    margin: 0 0 10px 0;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    width: 50px;
+    height: 50px;
+    background: var(--yellow);
+
+}
+
+.service-no {
+    font-size: 16px;
+    color: var(--dark-brown);
+    font-weight: 700;
+    
+}
+
+
+.service-img {
+    width: 50%;
+    height: auto;
+}
+
+.service-desc {
+    font-size: 12px;
+    margin: 10px 0 0 0;
+    text-align: justify;
+}
+
+
+/*contacts*/
+
+
+.contacts-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--dark-brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.send-email-container {
+    width: 80%;
+    background: var(--white);
+    opacity: 10;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.send-us-label {
+    font-size: 16px;
+    color: var(--red);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.input-wrapper {
+    width: 100%;
+}
+
+.input-wrapper input,
+textarea,
+.send-btn {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid var(--red);
+}
+
+.send-btn {
+    background: var(--red);
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.contacts-list {
+    list-style-type: none;
+    margin: 20px 0 0 0;
+}
+
+
+
+.contact-item {
+    display: flex;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.contact-icon {
+    width: 25px;
+    margin: 0 5px 0;
+    background: var(--white);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contact-detail {
+    color: var(--white);
+    font-size:14px;
+}
+
+/* go on top */
+
+.go-top{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    background: var(--white);
+    padding: 5px;
+    border-radius: 40%;
+    display: none;
+}
+
+.arrow-up{
+    width: 15px;
+}
