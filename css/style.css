@@ -4,7 +4,7 @@
     --red: #eb551f;
     --white: #DDEEDD;
     --dark-brown: #1B130E;
-    --yellow:#ffff00;
+    --yellow: #ffff00;
 
     /* font */
     --main-font: 'Montserrat', sans-serif;
@@ -62,13 +62,15 @@ a {
 }
 
 @keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
+
 .tagline {
     font-size: 16px;
     color: var(--white);
@@ -92,9 +94,11 @@ a {
 }
 
 @keyframes blink {
-    from{
+    from {
         opacity: 0.5;
-    }to{
+    }
+
+    to {
         opacity: 1;
     }
 
@@ -122,6 +126,7 @@ h2 {
     list-style: none;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     margin: 20px 0 0 0;
@@ -165,7 +170,7 @@ h2 {
     font-size: 16px;
     color: var(--dark-brown);
     font-weight: 700;
-    
+
 }
 
 
@@ -189,8 +194,6 @@ h2 {
     min-height: 100vh;
     background-color: var(--dark-brown);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 20px;
 
@@ -199,10 +202,10 @@ h2 {
 .send-email-container {
     width: 80%;
     background: var(--white);
-    opacity: 10;
     padding: 25px;
     margin: 20px 0;
     border-radius: 5px;
+    align-self: center;
 }
 
 .send-us-label {
@@ -256,12 +259,12 @@ textarea,
 
 .contact-detail {
     color: var(--white);
-    font-size:14px;
+    font-size: 14px;
 }
 
 /* go on top */
 
-.go-top{
+.go-top {
     position: fixed;
     right: 5px;
     bottom: 5px;
@@ -271,6 +274,42 @@ textarea,
     display: none;
 }
 
-.arrow-up{
+.arrow-up {
     width: 15px;
+}
+
+
+/* desktop and web version */
+
+
+@media only screen and (min-width:768px) {
+    .tagline-container {
+        margin-left: 50px;
+        width: 60%;
+    }
+
+    .tagline {
+        font-size: 32px;
+        line-height: 80px;
+    }
+
+    .services-btn {
+        font-size: 26px;
+        padding: 10px;
+        float: right;
+    }
+
+    .services-list{
+        flex-direction: row;
+        padding: 0 20px;
+
+    }
+    .service-item {
+        width: 50%;
+        margin: 10px 10px;
+    }
+    
+    .send-email-container {
+        width: 50%;
+    }
 }
